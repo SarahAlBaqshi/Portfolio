@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 75px 0;
+}
+
+.box_item {
+  width: 400px;
+  height: 400px;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  background-position: center;
+  background-image: url(../Portfolio/text.png);
+  color: rebeccapurple;
+  padding: 20px;
+}
+.box_item:hover {
+  font-size: 0;
+}
+.box_item:hover:after {
+  content: url(https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif);
+  font-size: 30px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+.column:hover {
+  font-size: 0;
+}
+.column:hover:after {
+  content: url(https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif);
+  font-size: 30px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
